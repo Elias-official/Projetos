@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> Jogo Ímpar ou Par</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <main>
+        <h1>🔥 Jogo Ímpar ou Par</h1>
+        <button onclick="toggleMusica()" id="botaoMusica">
+            🎵 Música: ON
+        </button>
+        <div class="barra-container"> 
+            <div id="barra-xp"></div>
+        </div>
+        <p> Nível: <span id="nivel">1</span></p>
+            <p>XP: <span id="xp">0</span></p>
+                <p>Vitorias Seguidas: <span id="streak">0</span></p>
+                    <p>Ranking: <span id="ranking">0</span></p>
+                        <p>Total de Partidas: <span id="totalPartidas">0</span></p>
+                        <p>Total de Vitórias: <span id="totalVitoria">0</span></p>
+                            <p>Taxa de Vitória: <span id="taxaVitoria">0%</span></p>
+                        <p>Maior Sequência: <span id="maiorSequencia">0</span></p>
+                    <p>Par escolhidos: <span id="statPar">0</span></p>
+                <p>Ímpar escolhidos: <span id="statImpar">0</span></p>
+            <p>Título: <span id="titulo">🐣 Iniciante</span></p>
+        <button onclick="toggleHardcore()" id="botaoHardcore">
+        🔥 Hardcore: ON
+        </button>
+
+
+        <select id="escolha">
+            <option value="par">Par</option>
+            <option value="impar">Ímpar</option>
+        </select>
+
+        <input type="number" id ="numero" min="0" max="101" placeholder="0 a 100">
+
+        <button onclick="jogar()">Jogar</button>
+        <button onclick="resetar()">Resetar Jogo</button>
+
+        <h2 id="resultado"></h2>
+
+        <p id="mensagemNivel"></p>
+
+       </main>
+        <script src="jogo.js"></script>
+    </body>
+</html>
